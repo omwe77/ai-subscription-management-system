@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=AIModel
+comment1.params=modelName\ price\ parameterCount\ contextWindow
+comment1.target=AIModel(java.lang.String,\ double,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getModelName()
+comment3.params=
+comment3.target=double\ getPrice()
+comment4.params=
+comment4.target=int\ getParameterCount()
+comment5.params=
+comment5.target=int\ getContextWindow()
+comment6.params=promptText\ expectedOutputTokens
+comment6.target=int\ calculateTotalToken(java.lang.String,\ int)
+comment7.params=
+comment7.target=java.lang.String\ display()
+numComments=8

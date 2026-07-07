@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=ProPlan
+comment0.text=\r\n\ Pro\ plan\ for\ teams.\ Uses\ a\ fixed-size\ array\ to\ store\ member\ names\r\n\ for\ search\ purposes.\ Slots\ are\ limited;\ name\ array\ prevents\r\n\ adding\ beyond\ capacity\ and\ supports\ removal/search.\r\n
+comment1.params=modelName\ price\ parameterCount\ contextWindow\ teamSlots
+comment1.target=ProPlan(java.lang.String,\ double,\ int,\ int,\ int)
+comment2.params=
+comment2.target=int\ getTeamSlots()
+comment3.params=name
+comment3.target=java.lang.String\ addMember(java.lang.String)
+comment4.params=name
+comment4.target=java.lang.String\ removeMember(java.lang.String)
+comment5.params=name
+comment5.target=boolean\ hasMember(java.lang.String)
+comment6.params=promptText\ expectedOutputTokens
+comment6.target=java.lang.String\ usePrompt(java.lang.String,\ int)
+comment7.params=
+comment7.target=java.lang.String\ display()
+numComments=8
