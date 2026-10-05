@@ -1,7 +1,7 @@
 /**
  * Personal plan for individual users. Tracks available tokens.
  * 
- * @author Your Name
+ * @author Om Dangol
  * @version Final
  */
 public class PersonalPlan extends AIModel {
