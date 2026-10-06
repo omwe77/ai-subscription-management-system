@@ -100,6 +100,24 @@ java SubscriptionGUI
 
 ---
 
+## Implementation Status
+
+### Implemented (Verified in Active Codebase)
+- **Object-Oriented Architecture:** Abstract base class `AIModel` enforcing contract attributes (model name, price, parameter count, context window) and `calculateTotalToken` validation.
+- **Personal Plan Tier:** Concrete subclass `PersonalPlan` implementing metered token quotas, top-ups (`buyTokens`), and dynamic prompt consumption deductions (`usePrompt`).
+- **Enterprise Team Tier:** Concrete subclass `ProPlan` with bounded team slot allocations and shift-deletion array management (`addMember`, `removeMember`, `searchMember`).
+- **Desktop Graphical Interface:** Java Swing GUI (`SubscriptionGUI`) with input sanitization dialogs, plan selection cards, and interactive `JTable` rendering.
+- **File-Based Persistence:** Serializes and reloads subscription configurations to and from local text storage.
+
+### In Progress
+- *None (Academic Coursework Deliverable Complete).*
+
+### Planned (Future Enhancements)
+- **Byte-Pair Encoding (BPE):** Integrating real subword tokenization algorithms (e.g. tiktoken) to replace whitespace estimation.
+- **Headless & Web APIs:** Wrapping model subscription tracking into a headless CLI and Spring Boot REST API.
+
+---
+
 ## Design Decisions
 
 - **Direct Inheritance:** `PersonalPlan` and `ProPlan` inherit from `AIModel` to guarantee consistent telemetry while specializing behaviors (token balance vs. seat allocation).
